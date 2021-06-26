@@ -1,0 +1,154 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+body{
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: -2;
+    background-color:rgb(38 35 35);
+}
+nav{
+    padding: 50px;
+}
+
+#signInBtn{
+    padding: 1vw;
+    background-color: red;
+    color: white;
+    border: 2px solid red;
+    border-radius: 3px;
+}
+
+#lang{
+    padding: 1vw; 
+    background-color: transparent;
+    color:white;
+    border-color: white;
+    border-radius: 2px;
+}
+
+#s1{
+    position: relative;
+    min-height: 100vh;
+    margin-bottom: 10px;
+}
+
+#s1::before{
+    content: '';
+    background-image: url('../images/bg.jpg');
+    position: absolute;
+    top:0;
+    left: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    filter: brightness(50%);
+    width: 100%;
+    height: 100%;
+}
+
+option{
+    background-color: rgb(158, 144, 144);
+}
+
+p{
+    color: white;
+    margin-bottom: 10px;
+}
+
+.main{
+    text-align: center;
+    width: 70%;
+    margin: auto;
+    /* margin: auto; */
+}
+
+input{
+    padding: 3vh 15vh;
+    margin-bottom: 15px;
+    border:none;
+}
+
+#getStart{
+    padding: 3vh 5vh;
+    background-color: red;
+    border:none;
+    margin: -4px;
+    color: white;
+    font-weight: bold;
+}
+
+#s2,#s3{
+    margin-bottom: 10px;
+    min-height: 400px;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+}
+#s4{
+    margin-bottom: 10px;
+    min-height: 400px;
+    background-color: black;
+}
+
+@media only screen and (max-width:600px) {
+    #s2,#s3{
+        flex-direction: column;
+    }
+    .main{
+        width: 100%;
+    }
+}
+.content{
+    display: none;
+    color: white;
+    background-color: #303030;
+    padding: 10px;
+    border-bottom: 5px solid black;
+}
+
+.item{
+    padding: 20px;
+    border: 0;
+    background-color: #303030;
+    margin-bottom: 5px;
+    color: white;
+    cursor: pointer;
+    text-align: left;
+}
+
+.active, .item:hover {
+    background-color: rgb(37, 4, 4);
+    color: white;
+  }
+
+  .bottomForm{
+      width: 70%;
+      margin: auto;
+      padding-top: 45px;
+      padding-bottom: 45px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  }
+
+  footer{
+      background-color: black;
+      color: #757575;
+      min-height: 400px;
+  }
+
+  .col{
+      padding: 30px;
+  }
+
+ul{
+    list-style-type:none;
+}
+li{
+    padding: 4px;
+}
